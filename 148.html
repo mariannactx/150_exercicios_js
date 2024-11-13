@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="148.js"></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exibir frequência de cada letra no texto</h1>
+    <form id="form">
+      <label for="texto"> Insira uma texto </label>
+      <br />
+      <textarea name="texto">Lorem ipsum dolor sit amet.</textarea>
+      <br />
+      <br />
+      <button type="submit">Calcular</button>
+    </form>
+
+    <h2>Frequência das letras:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Letra</th>
+          <th>Frequência</th>
+        </tr>
+      </thead>
+      <tbody id="frequencia"></tbody>
+    </table>
+  </body>
+</html>

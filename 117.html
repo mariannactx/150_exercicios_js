@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="117.js"></script>
+  </head>
+  <body>
+    <h1>Calcular expressão numérica</h1>
+    <form id="form">
+      <input type="number" id="esquerda" name="esquerda" />
+      <select id="operador" name="operador">
+        <option value="" disabled selected>Selecione o operador</option>
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+        <option value="5">**</option>
+        <option value="6">√</option>
+      </select>
+      <input type="number" name="direita" />
+      <br />
+      <br />
+      <button type="submit">Calcular</button>
+    </form>
+
+    <h2>Resultado: <span id="resultado"></span></h2>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="118.js"></script>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      select, button, th, td {
+        padding: 5px 10px
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calcular total dos produtos</h1>
+    <form id="form">
+      <select name="produtos" required>
+        <option value="" disabled selected>Selecione o produto</option>
+        <option name="Produto 1" value="10.00">Produto 1 - R$10,00</option>
+        <option name="Produto 2" value="20.00">Produto 2 - R$20,00</option>
+        <option name="Produto 3" value="30.00">Produto 3 - R$30,00</option>
+        <option name="Produto 4" value="40.00">Produto 4 - R$40,00</option>
+        <option name="Produto 5" value="50.00">Produto 5 - R$50,00</option>
+        <option name="Produto 6" value="60.00">Produto 6 - R$60,00</option>
+      </select>
+      <button id="submit" type="submit">Inserir produto</button>
+    </form>
+    <br/> 
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+        </tr>
+      <tbody id="produtos">
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Desconto</th>
+          <th id="desconto"></th>
+        </tr>
+        <tr>
+          <th>Total</th>
+          <th id="total"></th>
+        </tr>
+      </tfoot>
+      </thead>
+    </table>
+  </body>
+</html>

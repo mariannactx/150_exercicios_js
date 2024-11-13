@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="135.js"></script>
+  </head>
+  <body>
+    <h1>Caixa eletrônico</h1>
+    <form id="form">
+      <label for="valor"> Insira um valor para sacar </label>
+      <input type="number" name="valor" min="2" max="1000" />
+      <br />
+      <br />
+      <button type="submit">Calcular</button>
+    </form>
+
+    <h3 id="erro" style="display: none">Valor não pode ser sacado</h3>
+
+    <div id="saque" style="display: none">
+      <h3>Seu saque</h3>
+      <p>Notas de 2: <span id="notas-2"></span></p>
+      <p>Notas de 5: <span id="notas-5"></span></p>
+      <p>Notas de 10: <span id="notas-10"></span></p>
+      <p>Notas de 20: <span id="notas-20"></span></p>
+      <p>Notas de 50: <span id="notas-50"></span></p>
+      <p>Notas de 100: <span id="notas-100"></span></p>
+      <p>Notas de 200: <span id="notas-200"></span></p>
+    </div>
+  </body>
+</html>
